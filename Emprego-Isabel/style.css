@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+main {
+    flex: 1;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.event-list {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    justify-content: flex-start; /* Garantir que os eventos comecem no início */
+    padding-left: 40px; /* Adicionar espaçamento antes do primeiro evento */
+}
+
+.event {
+    background: #fff;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    min-width: 500px;
+    max-width: 500px;
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efeito de destaque ao passar o mouse */
+.event:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.event-img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.event-info {
+    text-align: center;
+}
+
+.event h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.event p {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.btn {
+    background: #333;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+/* Footer no final da página */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Custom scrollbar */
+.event-list::-webkit-scrollbar {
+    height: 10px;
+}
+
+.event-list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.event-list::-webkit-scrollbar-track {
+    background: #f4f4f4;
+}
