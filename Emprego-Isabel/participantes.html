@@ -10,37 +10,37 @@
     <header>
         <h1>Participantes do Evento</h1>
     </header>
-
     <main>
-        <section id="participantes-list">
-            <h2>Participantes:</h2>
-            <ul id="lista-participantes">
-                <!-- Participantes fictícios -->
-                <li>João Silva - joao.silva@example.com</li>
-                <li>Maria Souza - maria.souza@example.com</li>
-            </ul>
-        </section>
-
-        <section id="add-participant">
-            <h2>Adicionar Participante</h2>
-            <form id="form-participante">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <input type="hidden" id="evento_id" value="">
-                
-                <button type="submit" class="btn">Adicionar Participante</button>
-            </form>
-        </section>
+        <!-- Contêiner principal para imagem e conteúdo -->
+        <div class="main-container">
+            <!-- Espaço para a imagem -->
+            <div class="image-container">
+                <img src="imagens/904ac79df119e99c4247865c60a1895e.jpg" alt="Imagem do Evento">
+            </div>
+            <div class="content-container">
+                <!-- Lista de Participantes -->
+                <div class="participants-container">
+                    <section id="participantes-list">
+                        <h2>Participantes:</h2>
+                        <ul id="lista-participantes">
+                            <li>João Silva - joao.silva@example.com</li>
+                            <li>Maria Souza - maria.souza@example.com</li>
+                        </ul>
+                    </section>
+                    <form id="form-participante">
+                        <input type="text" id="nome" placeholder="Nome" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <button type="submit" class="btn">Adicionar Participante</button> <!-- Botão com classe -->
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
-
     <footer>
         <p>&copy; 2024 Khronic</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script> <!-- Certifique-se de que o caminho está correto -->
 </body>
 </html>
+

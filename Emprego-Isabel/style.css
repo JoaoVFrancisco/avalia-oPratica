@@ -133,3 +133,94 @@ footer p {
 .event-list::-webkit-scrollbar-track {
     background: #f4f4f4;
 }
+
+/* Contêiner principal */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+}
+
+/* Contêiner da imagem */
+.image-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contêiner do conteúdo à direita */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Participantes e formulário dentro do content-container */
+.participants-container, .form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.participants-container {
+    max-width: 100%;
+}
+
+#participantes-list h2, #add-participant h2 {
+    text-align: center;
+}
+
+#lista-participantes li {
+    font-size: 1em;
+    margin-bottom: 10px;
+    list-style-type: none;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#lista-participantes li:last-child {
+    border-bottom: none;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
